@@ -1,0 +1,14 @@
+This piece of code was written to meet a requirement related to 
+extracting boot commands used for devices in Linaro's LAVAv1.
+
+The main code resides in the BootCommandExtractor class, which is 
+available in ../lib. It's instantiated in extractBootCommands.py,
+which is the script to be used for extracting boot commands from
+device configuration files.
+
+FUTURE IMPROVEMENTS
+===================
+-properly implement exception treatment methods (for now, some 
+errors reach STDOUT, which is not pretty elegant, especially when
+used in conjuction with Jenkins or other automated tools)
+-additional text processing 
